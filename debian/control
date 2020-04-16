@@ -106,20 +106,6 @@ Description: PostgreSQL module for FreeRADIUS server
  The FreeRADIUS server can use PostgreSQL to authenticate users and do
  accounting, and this module is necessary for that.
 
-Package: freeradius-mysql
-Architecture: any
-Depends: freeradius (= ${binary:Version}), ${shlibs:Depends}
-Description: MySQL module for FreeRADIUS server
- The FreeRADIUS server can use MySQL to authenticate users and do accounting,
- and this module is necessary for that.
-
-Package: freeradius-iodbc
-Architecture: any
-Depends: freeradius (= ${binary:Version}), ${shlibs:Depends}
-Description: iODBC module for FreeRADIUS server
- The FreeRADIUS server can use iODBC to access databases to authenticate users
- and do accounting, and this module is necessary for that.
-
 Package: freeradius-dialupadmin
 Architecture: all
 Depends: php5 | libapache2-mod-php5 | php5-cgi, apache2-mpm-prefork | httpd, ${perl:Depends}

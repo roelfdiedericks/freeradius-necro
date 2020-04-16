@@ -82,14 +82,20 @@ endif
 		--with-large-files --with-udpfromto --with-edir \
 		--enable-developer \
 		--config-cache \
-		--without-rlm_eap_tnc \
-		--with-rlm_sql_postgresql_lib_dir=`pg_config --libdir` \
-		--with-rlm_sql_postgresql_include_dir=`pg_config --includedir` \
-		--without-rlm_eap_ikev2 \
-		--without-rlm_sql_oracle \
-		--without-rlm_sql_unixodbc \
-		--with-system-libtool \
-		--with-system-libltdl
+        --without-rlm_eap_tnc \
+        --without-rlm_ldap \
+        --without-rlm_python \
+        --with-rlm_sql_postgresql_lib_dir=`pg_config --libdir` \
+        --with-rlm_sql_postgresql_include_dir=`pg_config --includedir` \
+        --without-rlm_eap_ikev2 \
+        --without-rlm_sql_oracle \
+        --without-rlm_sql_unixodbc \
+        --without-rlm_sql_mysql \
+        --without-rlm_sql_iodbc \
+        --with-system-libtool \
+        --with-mysql-lib-dir=/usr/lib/x86_64-linux-gnu/ \
+        --with-system-libltdl
+
 
 #Architecture 
 build: patch build-arch build-indep
